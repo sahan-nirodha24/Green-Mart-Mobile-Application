@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ChatBot">
+
+    <!-- Chat Messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/item_user_message" />
+
+    <!-- User Input Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/eTPrompt"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:hint="Enter your message..."
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="@android:color/black"
+            android:inputType="text"
+            android:longClickable="true" />
+
+        <ImageButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_send_24"
+            android:tint="@color/green" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnReturnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/orange"
+        android:layout_gravity="center_horizontal"
+        android:text="Return Home"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium" />
+
+</LinearLayout>

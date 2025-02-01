@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg4">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/gradient_background"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header Text -->
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Language Translator"
+            android:textColor="#FF0056"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Source Text Input -->
+        <EditText
+            android:id="@+id/sourceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/headerText"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="top|start"
+            android:hint="Enter text to translate"
+            android:inputType="textMultiLine"
+            android:longClickable="true"
+            android:maxLines="5"
+            android:padding="12dp"
+            android:textSize="20sp" />
+
+        <!-- Language Dropdown -->
+        <Spinner
+            android:id="@+id/languageSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/sourceEditText"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_spinner"
+            android:popupBackground="#FFF5E0" />
+
+        <!-- Translate Button -->
+        <Button
+            android:id="@+id/translateButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/languageSpinner"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#000056"
+            android:elevation="4dp"
+            android:text="Translate"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Target Text Output -->
+        <TextView
+            android:id="@+id/targetTextView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/translateButton"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_textview"
+            android:gravity="top|start"
+            android:hint="Translation will appear here"
+            android:overScrollMode="always"
+            android:padding="12dp"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/returnHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Return Home"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

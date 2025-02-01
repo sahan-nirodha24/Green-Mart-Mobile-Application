@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_beverage"
+            android:icon="@drawable/baseline_coffee_24"
+            android:title="Beverage"/>
+
+        <item
+            android:id="@+id/nav_diary"
+            android:icon="@drawable/baseline_icecream_24"
+            android:title="Diary"/>
+
+        <item
+            android:id="@+id/nav_pharmacy"
+            android:icon="@drawable/baseline_health_and_safety_24"
+            android:title="Pharmacy"/>
+
+        <item
+            android:id="@+id/nav_bakery"
+            android:icon="@drawable/baseline_lunch_dining_24"
+            android:title="Bakery"/>
+
+        <item
+            android:id="@+id/nav_care"
+            android:icon="@drawable/baseline_soap_24"
+            android:title="Care"/>
+
+        <item
+            android:id="@+id/nav_biscuit"
+            android:icon="@drawable/baseline_cookie_24"
+            android:title="Biscuits"/>
+
+        <item
+            android:id="@+id/nav_fruit"
+            android:icon="@drawable/baseline_shopping_basket_24"
+            android:title="Fruits"/>
+
+        <item
+            android:id="@+id/nav_vegetable"
+            android:icon="@drawable/baseline_agriculture_24"
+            android:title="Vegetables"/>
+
+    </group>
+
+</menu>
