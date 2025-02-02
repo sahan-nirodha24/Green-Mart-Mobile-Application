@@ -129,9 +129,9 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/offer1"
+                        android:contentDescription="Special offer 1, 50% discount on electronics"
                         android:scaleType="centerCrop"
-                        android:contentDescription="Special offer 1, 50% discount on electronics" />
+                        android:src="@drawable/offer1" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
