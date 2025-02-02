@@ -1,18 +1,321 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuFragment">
+    android:background="#E7F6E7"
+    android:padding="16dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Menu"
-        android:gravity="center"
-        android:textColor="@color/green"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textColor="#228B22"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="75dp"
+            android:paddingBottom="16dp" />
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/category_background"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/cat01"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/category1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bakery"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#FF69B4"
+                    android:gravity="center"
+                    android:paddingTop="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Freshly baked goods, bread, cakes, and pastries."
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#666"
+                    android:gravity="center"
+                    android:paddingTop="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/category_background"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/cat02"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/category2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biscuits"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFA500"
+                    android:gravity="center"
+                    android:paddingTop="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Variety of biscuits and cookies for every taste and craving"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#666"
+                    android:gravity="center"
+
+                    android:paddingTop="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/category_background"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/cat03"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/category3" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF69B4"
+                    android:gravity="center"
+                    android:paddingTop="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dairy meat and frozen foods stored at optimal tempature "
+                    android:textSize="12sp"
+                    android:textColor="#666"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingTop="4dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/category_background"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/cat04"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/category4" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fruits"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFA500"
+                    android:gravity="center"
+                    android:paddingTop="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A wide range of fresh and exotic tropical fruits and berries"
+                    android:textSize="12sp"
+                    android:textColor="#666"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingTop="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/category_background"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/cat05"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/category5" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vegetables"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF69B4"
+                    android:gravity="center"
+                    android:paddingTop="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fresh and organic vegetables sourced locally."
+                    android:textSize="12sp"
+                    android:textColor="#666"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingTop="4dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/category_background"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/cat06"
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/category6" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Care"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFA500"
+                    android:gravity="center"
+                    android:paddingTop="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal care products including skincare,haircare."
+                    android:textSize="12sp"
+                    android:textColor="#666"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingTop="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/category_background"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:layout_marginBottom="100dp">
+
+                <ImageView
+                    android:id="@+id/cat07"
+                    android:layout_width="200dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/category7" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beverage"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF69B4"
+                    android:gravity="center"
+                    android:paddingTop="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Refreshing drinks, juices, sodas, and more."
+                    android:textSize="12sp"
+                    android:textColor="#666"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingTop="4dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/category_background"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:layout_marginBottom="100dp">
+
+                <ImageView
+                    android:id="@+id/cat08"
+                    android:layout_width="200dp"
+                    android:layout_height="170dp"
+                    android:src="@drawable/category8" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pharmacy"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFA500"
+                    android:gravity="center"
+                    android:paddingTop="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Health and wellness products and medicines."
+                    android:textSize="12sp"
+                    android:textColor="#666"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingTop="4dp" />
+            </LinearLayout>
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
