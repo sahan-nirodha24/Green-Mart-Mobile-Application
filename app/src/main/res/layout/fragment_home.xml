@@ -333,6 +333,13 @@
                             android:textColor="#1B5E20"
                             android:textSize="16sp"
                             android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Price: $15.99"
+                            android:textColor="#757575"
+                            android:textSize="14sp" />
 
                         <TextView
                             android:layout_width="match_parent"
