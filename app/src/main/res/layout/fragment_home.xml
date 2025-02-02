@@ -129,9 +129,9 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:contentDescription="Special offer 1, 50% discount on electronics"
+                        android:src="@drawable/offer1"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/offer1" />
+                        android:contentDescription="Special offer 1, 50% discount on electronics" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
@@ -333,6 +333,13 @@
                             android:textColor="#1B5E20"
                             android:textSize="16sp"
                             android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Price: $15.99"
+                            android:textColor="#757575"
+                            android:textSize="14sp" />
 
                         <Button
                             android:layout_width="match_parent"
@@ -347,13 +354,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="Price: $15.99"
-                    android:textColor="#757575"
-                    android:textSize="14sp" />
+
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="200dp"
