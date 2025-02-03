@@ -5,7 +5,5 @@
     <color name="green">#50a854</color>
     <color name="orange">#ff9900</color>
     <color name="gray">#ADADAD</color>
-    <color name="yellow">#FDD835</color>
-    <color name="purple">#D500F9</color>
-    <color name="blue">#01E6FF</color>
+    <color name="light_green">#90EE90</color>color>
 </resources>

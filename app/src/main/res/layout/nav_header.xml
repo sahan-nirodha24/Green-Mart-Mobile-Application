@@ -23,7 +23,7 @@
         android:paddingTop="8dp"
         android:text="Green Mart"
         android:textColor="@color/orange"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
 

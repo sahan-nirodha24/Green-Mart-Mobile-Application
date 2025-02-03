@@ -75,7 +75,7 @@
         app:itemIconSize="30dp"
         app:itemIconTint="@color/orange"
         app:itemTextColor="@color/green"
-        android:background="#001626"
+        android:background="@color/white"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu"
         app:itemTextAppearance="@style/NavigationMenuItemStyle"

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="NavigationMenuItemStyle">
-        <item name="android:textSize">18sp</item>
-        <item name="fontFamily">@font/cabin_bold</item><!-- Change the text size as needed -->
+        <item name="android:textSize">18sp</item> <!-- Change the text size as needed -->
     </style>
 </resources>
