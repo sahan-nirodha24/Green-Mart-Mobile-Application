@@ -89,7 +89,7 @@ class ChatBot : AppCompatActivity() {
     private fun fetchBotResponse(context: String) {
         val generativeModel = GenerativeModel(
             modelName = "gemini-1.5-pro-latest", // Replace with actual model name
-            apiKey = "Api Key" // Replace with actual API key
+            apiKey = "AIzaSyDE6y3-7cSlSus9hqy_k1paQiNo4rPqJS4" // Replace with actual API key
         )
 
         CoroutineScope(Dispatchers.IO).launch {
