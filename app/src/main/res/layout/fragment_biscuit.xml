@@ -1,18 +1,530 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BiscuitFragment">
+    tools:context=".CareFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Biscuits"
-        android:gravity="center"
-        android:textColor="@color/green"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+        android:layout_height="wrap_content"
+        android:padding="16dp">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Biscuits"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/green"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@id/titleText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Card 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/bisImage1"
+                        android:layout_width="139dp"
+                        android:layout_height="124dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/bis1" />
+
+                    <TextView
+                        android:id="@+id/bisName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisImage1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Chocolate cream"
+                        android:textSize="14sp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/bisPrice1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisName1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="RS.410.00"
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/addToCartbisButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisPrice1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/bisImage2"
+                        android:layout_width="139dp"
+                        android:layout_height="124dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/bis2" />
+
+                    <TextView
+                        android:id="@+id/bisName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisImage2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="hawaian cookies"
+                        android:textColor="@color/green"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bisPrice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisName2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="Rs.130.00"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/addToCartbisButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisPrice2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@id/row1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/bisImage3"
+                        android:layout_width="139dp"
+                        android:layout_height="124dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/bis3" />
+
+                    <TextView
+                        android:id="@+id/bisName3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisImage3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Gold mari"
+                        android:textSize="16sp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bisPrice3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisName3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="Rs.240.00"
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/addToCartbisButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisPrice3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/bisImage4"
+                        android:layout_width="139dp"
+                        android:layout_height="124dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/bis4" />
+
+                    <TextView
+                        android:id="@+id/bisName4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisImage4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Milk shorts"
+                        android:textSize="16sp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bisPrice4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisName4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="Rs.120.00"
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/addToCartbisButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisPrice4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@id/row2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Card 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/bisImage5"
+                        android:layout_width="139dp"
+                        android:layout_height="124dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/bis5" />
+
+                    <TextView
+                        android:id="@+id/bisName5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisImage5"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Lemon puff"
+                        android:textSize="16sp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bisPrice5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisName5"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="Rs.250.00"
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/addToCartbisButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisPrice5"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/bisImage6"
+                        android:layout_width="139dp"
+                        android:layout_height="124dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/bis6" />
+
+                    <TextView
+                        android:id="@+id/bisName6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisImage6"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Magic cookies"
+                        android:textColor="@color/green"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bisPrice6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisName6"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="Rs.275.00"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/addToCartbisButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisPrice6"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="250dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@id/row3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="50dp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/bisImage7"
+                        android:layout_width="139dp"
+                        android:layout_height="124dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/bis7" />
+
+                    <TextView
+                        android:id="@+id/bisName7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisImage7"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Potato cracker"
+                        android:textSize="16sp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bisPrice7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisName7"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="Rs.180.00"
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/addToCartbisButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisPrice7"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/bisImage8"
+                        android:layout_width="139dp"
+                        android:layout_height="124dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/bis8" />
+
+                    <TextView
+                        android:id="@+id/bisName8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisImage8"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Cream cracker"
+                        android:textSize="16sp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bisPrice8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisName8"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="Rs.190.00"
+                        android:textSize="14sp"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/addToCartbisButton8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bisPrice8"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="Add to Cart" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
